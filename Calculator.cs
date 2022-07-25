@@ -17,23 +17,23 @@ switch (calc)
 
     case "*":
         result = vala * valb;
-        Console.WriteLine("The result is {0}.", result);
+        Console.WriteLine("The result is {0}. ", result);
         break;
 
     case "/":
         result = vala / valb;
-        Console.WriteLine("The result is {0}.", result);
+        Console.WriteLine("The result is {0}. ", result);
         break;
 
     case "+":
         result = vala + valb;
-        Console.WriteLine("The result is {0}.", result);
+        Console.WriteLine("The result is {0}. ", result);
         break;
 
 
     case "-":
         result = vala - valb;
-        Console.WriteLine("The result is {0}.", result);
+        Console.WriteLine("The result is {0}. ", result);
         break;
 
     default:
