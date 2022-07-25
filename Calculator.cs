@@ -1,50 +1,64 @@
-Console.Write("Enter value A: ");
-int vala = int.Parse(Console.ReadLine());
+            Console.Write("Enter value A:");
+            int vala = int.Parse(Console.ReadLine());
 
 
-Console.Write("Enter Calculation Type: ");
-string calc = (Console.ReadLine());
+            Console.Write("Enter value B:");
+            int valb = int.Parse(Console.ReadLine());
 
-Console.Write("Enter value B: ");
-int valb = int.Parse(Console.ReadLine());
-
-
-int result;
+            Console.Write("Enter Calculation Type:");
+            string calc = (Console.ReadLine());
 
 
-switch (calc)
-{
-
-    case "*":
-        result = vala * valb;
-        Console.WriteLine("The result is {0}. ", result);
-        break;
-
-    case "/":
-        result = vala / valb;
-        Console.WriteLine("The result is {0}. ", result);
-        break;
-
-    case "+":
-        result = vala + valb;
-        Console.WriteLine("The result is {0}. ", result);
-        break;
+            double result;
 
 
-    case "-":
-        result = vala - valb;
-        Console.WriteLine("The result is {0}. ", result);
-        break;
+            switch (calc)
+            {
 
-    default:
-        Console.WriteLine("Wrong Value!");
-        break;
+                case "*":
+                    result = vala * valb;
+                    Console.WriteLine("The result is {0}.", result);
+                    break;
 
-}
+                case "/":
+                    result = vala / valb;
+                    Console.WriteLine("The result is {0}.", result);
+                    break;
+
+                case "+":
+                    result = vala + valb;
+                    Console.WriteLine("The result is {0}.", result);
+                    break;
 
 
+                case "-":
+                    result = vala - valb;
+                    Console.WriteLine("The result is {0}.", result);
+                    break;
 
+                case "sqrt":
+                    result = Math.Sqrt(vala + valb);
+                    Console.WriteLine(result);
+                    break;
 
+                case "Pow":
+                    result = Math.Pow(vala, valb);
+                    Console.WriteLine(result);
+                    break;
 
+                case "Reamainder":
+                    result = vala % valb;
+                    Console.WriteLine(result);
+                    break;
 
-Console.ReadKey();
+                case "exit":
+                    Console.WriteLine("Cya soon!");
+                    break;
+
+                default:
+                    Console.WriteLine("Wrong Value!");
+                    break;
+
+            }
+
+            Console.ReadKey();
