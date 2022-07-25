@@ -1,11 +1,11 @@
-Console.Write("Enter value A:");
+Console.Write("Enter value A: ");
 int vala = int.Parse(Console.ReadLine());
 
 
-Console.Write("Enter Calculation Type:");
+Console.Write("Enter Calculation Type: ");
 string calc = (Console.ReadLine());
 
-Console.Write("Enter value B:");
+Console.Write("Enter value B: ");
 int valb = int.Parse(Console.ReadLine());
 
 
